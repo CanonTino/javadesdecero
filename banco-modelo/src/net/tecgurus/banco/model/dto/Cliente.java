@@ -10,7 +10,7 @@ public class Cliente extends Persona implements Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 	private int numeroCliente;
-	private Date fechaNacimiento;
+//	private Date fechaNacimiento;
 	private boolean status;
 	private Banco banco;
 	
@@ -19,16 +19,14 @@ public class Cliente extends Persona implements Serializable {
 	}
 	
 	public Cliente(String nombre, String apellidoPaterno, String apellidoMaterno, Date fechaNacimiento, boolean status, Banco banco) {
-		super(nombre, apellidoPaterno, apellidoMaterno);
-		this.fechaNacimiento = fechaNacimiento;
+		super(nombre, apellidoPaterno, apellidoMaterno, fechaNacimiento);
 		this.banco = banco;
 		this.status = status;
 	}
 
 	public Cliente( int numeroCliente,String nombre, String apellidoPaterno, String apellidoMaterno, Date fechaNacimiento, boolean status, Banco banco) {
-		super(nombre, apellidoPaterno, apellidoMaterno);
+		super(nombre, apellidoPaterno, apellidoMaterno, fechaNacimiento);
 		this.numeroCliente = numeroCliente;
-		this.fechaNacimiento = fechaNacimiento;
 		this.banco = banco;
 		this.status = status;
 	}
@@ -36,9 +34,9 @@ public class Cliente extends Persona implements Serializable {
 	public Cliente(int numeroCliente, Date fechaNacimiento, Banco banco, boolean status) {
 		super();
 		this.numeroCliente = numeroCliente;
-		this.fechaNacimiento = fechaNacimiento;
 		this.banco = banco;
 		this.status = status;
+		setFechaNacimiento(fechaNacimiento);
 	}
 
 	public int getNumeroCliente() {
@@ -49,13 +47,13 @@ public class Cliente extends Persona implements Serializable {
 		this.numeroCliente = numeroCliente;
 	}
 
-	public Date getFechaNacimiento() {
-		return fechaNacimiento;
-	}
-
-	public void setFechaNacimiento(Date fechaNacimiento) {
-		this.fechaNacimiento = fechaNacimiento;
-	}
+//	public Date getFechaNacimiento() {
+//		return fechaNacimiento;
+//	}
+//
+//	public void setFechaNacimiento(Date fechaNacimiento) {
+//		this.fechaNacimiento = fechaNacimiento;
+//	}
 
 	public Banco getBanco() {
 		return banco;
