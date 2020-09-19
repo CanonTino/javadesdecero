@@ -38,7 +38,7 @@ public class ReportePdf {
 	
 	private PdfPTable crearTabla(List<Cliente> clientes) {
 		PdfPTable tabla = null;
-		float[] anchuraDeColumnas = {30,15,15,10,10,10,10};
+//		float[] anchuraDeColumnas = {30,15,15,10,10,10,10};
 		tabla = new PdfPTable(7);
 		tabla.setWidthPercentage(100);
 		tabla.setSpacingBefore(10);
