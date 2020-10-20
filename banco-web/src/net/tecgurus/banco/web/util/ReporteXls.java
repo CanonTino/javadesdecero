@@ -13,7 +13,7 @@ public class ReporteXls {
 	
 	public Workbook exportarAXls(List<Cliente> clientes) {
 		Workbook workbook = new HSSFWorkbook();
-		Sheet pagina = workbook.createSheet("Productos");
+		Sheet pagina = workbook.createSheet("Clientes");
 		int indiceDeFila = 0;
 		
 		Row fila = pagina.createRow(indiceDeFila++);
