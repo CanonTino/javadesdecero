@@ -2,10 +2,10 @@
 Proyecto demo para curso Java desde cero en TG
 
 # Tools
-- jdk8
+- [jdk8](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
 - mysql server 5.7
 - workbench
-- eclipse 2018-12 (4.10.0)
+- [eclipse 2018-12 (4.10.0)](https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2018-09/R/eclipse-jee-2018-09-win32-x86_64.zip)
 - tomcat 8.5.x
 
 # Dependencias
